@@ -17,6 +17,7 @@
 		76026F402700F4170029C631 /* BookRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76026F3F2700F4170029C631 /* BookRowCell.swift */; };
 		76026F442700F4EA0029C631 /* BKTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76026F432700F4EA0029C631 /* BKTitleLabel.swift */; };
 		76026F482700F6460029C631 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76026F472700F6460029C631 /* UIImageView+Ext.swift */; };
+		76026F4B27011CF50029C631 /* BookDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76026F4A27011CF50029C631 /* BookDetailVC.swift */; };
 		764EA9EC2700DFA500431F5E /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EA9EB2700DFA500431F5E /* BookModel.swift */; };
 		764EA9F02700DFB900431F5E /* BestSellersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764EA9EF2700DFB900431F5E /* BestSellersModel.swift */; };
 		76AAB77A2700D6070096CD70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAB7792700D6070096CD70 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		76026F3F2700F4170029C631 /* BookRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRowCell.swift; sourceTree = "<group>"; };
 		76026F432700F4EA0029C631 /* BKTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKTitleLabel.swift; sourceTree = "<group>"; };
 		76026F472700F6460029C631 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		76026F4A27011CF50029C631 /* BookDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailVC.swift; sourceTree = "<group>"; };
 		764EA9EB2700DFA500431F5E /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		764EA9EF2700DFB900431F5E /* BestSellersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellersModel.swift; sourceTree = "<group>"; };
 		76AAB7762700D6070096CD70 /* Book King.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book King.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 				76AAB7792700D6070096CD70 /* AppDelegate.swift */,
 				76026F3C2700EF420029C631 /* BooksHorizontalController.swift */,
 				76026F3F2700F4170029C631 /* BookRowCell.swift */,
+				76026F4A27011CF50029C631 /* BookDetailVC.swift */,
 				76AAB77B2700D6070096CD70 /* SceneDelegate.swift */,
 				76AAB7822700D6080096CD70 /* Assets.xcassets */,
 				76AAB7842700D6080096CD70 /* LaunchScreen.storyboard */,
@@ -293,6 +296,7 @@
 				76026F292700E9AD0029C631 /* GenreGroupCell.swift in Sources */,
 				764EA9EC2700DFA500431F5E /* BookModel.swift in Sources */,
 				76026F2D2700EAAC0029C631 /* Label+Ext.swift in Sources */,
+				76026F4B27011CF50029C631 /* BookDetailVC.swift in Sources */,
 				76AAB77C2700D6070096CD70 /* SceneDelegate.swift in Sources */,
 				76026F312700EB3E0029C631 /* UIView+Lavout.swift in Sources */,
 				76026F402700F4170029C631 /* BookRowCell.swift in Sources */,

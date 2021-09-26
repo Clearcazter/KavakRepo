@@ -15,6 +15,14 @@ class BooksHorizontalController: UICollectionViewController, UICollectionViewDel
     var bookGroup: [BookModel]?
     var groups = [BookModel]()
     
+    var didselecHandler: ((BookModel) -> ())?
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let book = bookGroup?[indexPath.item] {
+        didselecHandler?(book)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .systemBackground

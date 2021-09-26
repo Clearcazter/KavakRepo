@@ -31,7 +31,6 @@ class GenreVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func getBooksAndBestSellers() {
-        
         let dispatchGroup = DispatchGroup()
         dispatchGroup.enter()
         NetworkManager.shared.getBooks { [weak self] (books, errorMessage) in
@@ -78,6 +77,7 @@ class GenreVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
 
     
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return genres.count
     }
@@ -91,9 +91,6 @@ class GenreVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
         genres.sort()
         let categorie = genres[indexPath.item]
         
-        print(categorie)
-        print("----")
-        
         if categorie == "Best Sellers" {
             cell.titleLabel.text = categorie
             var bestBooks = [BookModel]()
@@ -105,6 +102,12 @@ class GenreVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
                 })
             })
             cell.horizontalController.bookGroup = bestBooks
+            cell.horizontalController.didselecHandler = { [weak self] bookTarget in
+                
+                let detailVC = BookInfoVC(book: bookTarget)
+                detailVC.view.backgroundColor = .systemBackground
+                self?.navigationController?.pushViewController(detailVC, animated: true)
+            }
             cell.horizontalController.collectionView.reloadData()
         }
         else {
@@ -116,6 +119,12 @@ class GenreVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
                     }
             })
             cell.horizontalController.bookGroup = categorieBook
+            cell.horizontalController.didselecHandler = { [weak self] bookTarget in
+                
+                let detailVC = BookInfoVC(book: bookTarget)
+                detailVC.view.backgroundColor = .systemBackground
+                self?.navigationController?.pushViewController(detailVC, animated: true)
+            }
             cell.horizontalController.collectionView.reloadData()
         }
         

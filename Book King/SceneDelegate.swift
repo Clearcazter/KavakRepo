@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func createBestSellerNC() -> UINavigationController {
         let genreVC = GenreVC()
-        genreVC.title = "Genre"
+        genreVC.title = "All Books"
         genreVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
         
         return UINavigationController(rootViewController: genreVC)

@@ -39,7 +39,7 @@ class BKTitleLabel: UILabel {
 }
 
 
-class KVBodyLabel: UILabel {
+class BKBodyLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)

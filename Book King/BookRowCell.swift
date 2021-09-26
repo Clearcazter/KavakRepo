@@ -42,7 +42,6 @@ class BookRowCell: UICollectionViewCell {
         
         bookImage.widthAnchor.constraint(equalToConstant: 190).isActive = true
         bookImage.heightAnchor.constraint(equalToConstant: 280).isActive = true
-        bookImage.backgroundColor = .green
                 
         bookTitleLabel.text = "Title"
         bookAuthorLabel.text = "Author"
